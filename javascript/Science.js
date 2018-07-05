@@ -7,8 +7,8 @@ function addScience(){
 }
 
 function researchStoneWorking(){
-    if (scienceTotal >= 10000) {
-        scienceTotal = scienceTotal - 10000;
+    if (scienceTotal >= 500) {
+        scienceTotal = scienceTotal - 500;
         unhide("stoneResource");
         unhide("quarryBuilding");
     }
