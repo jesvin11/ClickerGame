@@ -15,7 +15,7 @@ function refresh(){
     document.getElementById('unemployed').innerHTML = unemployed;
     document.getElementById('farmers').innerHTML = farmers;
     document.getElementById('straw huts').innerHTML = strawHutTotal;
-    document.getElementById('science').innerHTML = scienceTotal;
+    document.getElementById('science').innerHTML = scienceTotal + "/" + scienceMax;
     document.getElementById('sciencePerTick').innerHTML = sciencePerTick;
     document.getElementById('library').innerHTML = libraryTotal;
     document.getElementById('scientists').innerHTML = scientists;
