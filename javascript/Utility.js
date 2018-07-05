@@ -18,4 +18,7 @@ function refresh(){
     document.getElementById('wood').innerHTML = woodTotal;
     document.getElementById('woodPerTick').innerHTML = woodPerTick;
     document.getElementById('woodcutters').innerHTML = woodcutters;
+    document.getElementById('stone').innerHTML = woodTotal;
+    document.getElementById('stonePerTick').innerHTML = woodPerTick;
+    document.getElementById('quarries').innerHTML = quarryTotal;
 }

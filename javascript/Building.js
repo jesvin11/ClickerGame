@@ -1,6 +1,7 @@
 farmTotal = 0;
 strawHutTotal = 0;
 libraryTotal = 0;
+quarryTotal = 0;
 
 function buildFarm(){
     if (foodTotal >= 10){
@@ -28,8 +29,16 @@ function buildLibrary(){
         libraryTotal++;
         if (libraryTotal === 1){
             unhide("scienceResource");
-            unhide("scienceJob")
+            unhide("scienceJob");
+            unhide("scienceTable")
         }
         refresh();
+    }
+}
+
+function buildQuarry(){
+    if (woodTotal >= 100){
+        woodTotal = woodTotal - 100;
+        quarryTotal++;
     }
 }

@@ -62,6 +62,17 @@
                 <div id="sciencePerTick"></div>
             </td>
         </tr>
+        <tr class="hidden" id="stoneResource">
+            <td>
+                Stone
+            </td>
+            <td>
+                <div id="stone"></div>
+            </td>
+            <td>
+                <div id="stonePerTick"></div>
+            </td>
+        </tr>
 
     </table>
 
@@ -79,7 +90,7 @@
             </td>
             <td>
                 <button onclick="buildFarm()">
-                    Build Farm
+                    Build
                 </button>
             </td>
             <td>
@@ -93,7 +104,7 @@
             </td>
             <td>
                 <button onclick="buildStrawHut()">
-                    Build Straw Hut
+                    Build
                 </button>
             </td>
             <td>
@@ -107,11 +118,25 @@
             </td>
             <td>
                 <button onclick="buildLibrary()">
-                    Build Library
+                    Build
                 </button>
             </td>
             <td>
                 75 Wood
+            </td>
+        </tr>
+        <tr class="hidden" id="quarryBuilding">
+            <td>Quarries</td>
+            <td>
+                <div id="quarries"></div>
+            </td>
+            <td>
+                <button onclick="buildQuarry()">
+                    Build
+                </button>
+            </td>
+            <td>
+                100 Wood
             </td>
         </tr>
     </table>
@@ -178,6 +203,18 @@
             <td>
                 <button onclick="addScientist()">
                     +
+                </button>
+            </td>
+        </tr>
+    </table>
+    <table class="hidden" id="scienceTable">
+        <tr>
+            <td>
+                Stone Working
+            </td>
+            <td>
+                <button onclick="researchStoneWorking()">
+                    Research
                 </button>
             </td>
         </tr>
