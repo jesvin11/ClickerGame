@@ -13,3 +13,10 @@ function researchStoneWorking(){
         unhide("quarryBuilding");
     }
 }
+
+function researchWoodHousing(){
+    if (scienceTotal >= 750) {
+        scienceTotal = scienceTotal - 750;
+        unhide("WoodenHouseHidden");
+    }
+}

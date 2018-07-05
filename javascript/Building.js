@@ -2,6 +2,7 @@ farmTotal = 0;
 strawHutTotal = 0;
 libraryTotal = 0;
 quarryTotal = 0;
+woodenHouseTotal = 0;
 
 function buildFarm(){
     if (foodTotal >= 10){
@@ -40,5 +41,14 @@ function buildQuarry(){
     if (woodTotal >= 100){
         woodTotal = woodTotal - 100;
         quarryTotal++;
+    }
+}
+
+function buildWoodenHouse(){
+    if (woodTotal >= 125){
+        woodTotal = woodTotal - 125;
+        woodenHouseTotal++;
+        maxCivilians = maxCivilians + 3;
+        refresh();
     }
 }
