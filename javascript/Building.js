@@ -24,7 +24,7 @@ function buildStrawHut(){
 
 function buildLibrary(){
     if (woodTotal >= 75){
-        foodTotal = foodTotal - 75;
+        woodTotal = woodTotal - 75;
         libraryTotal++;
         if (libraryTotal === 1){
             unhide("scienceResource");
