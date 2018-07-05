@@ -1,0 +1,15 @@
+td {
+    border: 1px solid black;
+}
+.emptyCell {
+    border: 0;
+}
+#time {
+    display: inline;
+}
+table {
+    margin: 15px;
+}
+.hidden {
+    display: none;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script language="JavaScript" src="javascript/Food.js"></script>
+    <script language="JavaScript" src="javascript/Civilian.js"></script>
+    <script language="JavaScript" src="javascript/TimerControl.js"></script>
+    <script language="JavaScript" src="javascript/DayControl.js"></script>
+    <script language="JavaScript" src="javascript/Utility.js"></script>
+    <script language="JavaScript" src="javascript/Job.js"></script>
+    <script language="JavaScript" src="javascript/Utility.js"></script>
+    <script language="JavaScript" src="javascript/Building.js"></script>
+    <script language="JavaScript" src="javascript/Science.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body onload="Timer()">
+    <button onclick="harvest()">
+        Harvest
+    </button>
+    Time: <div id="time"></div>
+    <table>
+        <tr>
+            <td class="emptyCell"></td>
+            <td>Resource</td>
+            <td>Change per Tick</td>
+        </tr>
+        <tr>
+            <td>Food</td>
+            <td>
+                <div id="food"></div>
+            </td>
+            <td>
+                <div id="foodPerTick"></div>
+            </td>
+        </tr>
+        <tr class="hidden" id="civilianResource">
+            <td >Civilians</td>
+            <td>
+                <div id="civilians"></div>
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr class="hidden" id="scienceResource">
+            <td >Science</td>
+            <td>
+                <div id="science"></div>
+            </td>
+            <td>
+                <div id="sciencePerTick"></div>
+            </td>
+        </tr>
+
+    </table>
+
+    <table>
+        <tr>
+            <td class="emptyCell"></td>
+            <td>Building Count</td>
+            <td>Build</td>
+            <td>Cost</td>
+        </tr>
+        <tr>
+            <td>Farms</td>
+            <td>
+                <div id="farms"></div>
+            </td>
+            <td>
+                <button onclick="buildFarm()">
+                    Build Farm
+                </button>
+            </td>
+            <td>
+                10 food
+            </td>
+        </tr>
+        <tr>
+            <td>Straw Huts</td>
+            <td>
+                <div id="straw huts"></div>
+            </td>
+            <td>
+                <button onclick="buildStrawHut()">
+                    Build Straw Hut
+                </button>
+            </td>
+            <td>
+                50 food
+            </td>
+        </tr>
+        <tr>
+            <td>Library</td>
+            <td>
+                <div id="library"></div>
+            </td>
+            <td>
+                <button onclick="buildLibrary()">
+                    Build Library
+                </button>
+            </td>
+            <td>
+                100 food
+            </td>
+        </tr>
+    </table>
+    <table class="hidden" id="jobTable">
+        <tr>
+            <td class="emptyCell"></td>
+            <td>Remove</td>
+            <td>Total</td>
+            <td>Add</td>
+        </tr>
+        <tr>
+            <td>Unemployed</td>
+            <td>
+
+            </td>
+            <td>
+                <div id="unemployed"></div>
+            </td>
+            <td>
+
+            </td>
+        <tr>
+            <td>Farmer</td>
+            <td>
+                <button onclick="removeFarmer()">
+                -
+                </button>
+            </td>
+            <td>
+                <div id="farmers"></div>
+            </td>
+            <td>
+                <button onclick="addFarmer()">
+                    +
+                </button>
+            </td>
+        </tr>
+        <tr class="hidden" id="scienceJob">
+            <td>Scientist</td>
+            <td>
+                <button onclick="removeScientist()">
+                    -
+                </button>
+            </td>
+            <td>
+                <div id="scientists"></div>
+            </td>
+            <td>
+                <button onclick="addScientist()">
+                    +
+                </button>
+            </td>
+        </tr>
+    </table>
+    <textarea></textarea>
+</body>
+</html>
