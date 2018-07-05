@@ -1,9 +1,14 @@
 scienceTotal = 0;
 sciencePerTick = 0;
+scientistEfficiency = 2;
+scienceMax = 0;
 
 function addScience(){
-    sciencePerTick = scientists * 2 + libraryTotal * 0.5;
+    sciencePerTick = scientists * scientistEfficiency;
     scienceTotal = scienceTotal + sciencePerTick;
+    if (scienceTotal > scienceMax){
+        scienceTotal = scienceMax;
+    }
 }
 
 function researchStoneWorking(){
@@ -11,12 +16,14 @@ function researchStoneWorking(){
         scienceTotal = scienceTotal - 500;
         unhide("stoneResource");
         unhide("quarryBuilding");
+        hide("stoneWorkingTech")
     }
 }
 
-function researchWoodHousing(){
+function researchWoodenHousing(){
     if (scienceTotal >= 750) {
         scienceTotal = scienceTotal - 750;
         unhide("WoodenHouseHidden");
+        hide("woodenHousingTech")
     }
 }

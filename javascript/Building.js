@@ -28,6 +28,7 @@ function buildLibrary(){
     if (woodTotal >= 75){
         woodTotal = woodTotal - 75;
         libraryTotal++;
+        scienceMax = scienceMax + 100;
         if (libraryTotal === 1){
             unhide("scienceResource");
             unhide("scienceJob");

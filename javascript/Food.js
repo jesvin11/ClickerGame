@@ -2,6 +2,7 @@ foodTotal = 0;
 foodPerTick = 0;
 farmEfficiency = 0.5;
 farmerEfficiency = 4;
+foodMax = 500;
 
 
 function harvest(){
@@ -20,7 +21,8 @@ function addFood(){
             checkDeath();
         }
         foodTotal = 0;
-
+    } else if (foodTotal > foodMax){
+        foodTotal = foodMax;
     }
 }
 
