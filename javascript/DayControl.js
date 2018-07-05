@@ -1,11 +1,11 @@
-hour = 7;
+hour = 5;
 dayOfSeason = 1;
 season = 2;
 seasonName = "Spring";
 
 function timeAdvance(){
-    if (hour < 23){
-        hour++;
+    if (hour < 21){
+        hour = hour + 3;
     } else {
         hour = 0;
         if (dayOfSeason < 30){
