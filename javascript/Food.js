@@ -1,5 +1,7 @@
 foodTotal = 0;
 foodPerTick = 0;
+farmEfficiency = 0.5;
+farmerEfficiency = 4;
 
 
 function harvest(){
@@ -10,7 +12,7 @@ function harvest(){
 
 
 function addFood(){
-    foodPerTick = (farmTotal * 0.5) - (civilianTotal * 2) + (farmers * 3);
+    foodPerTick = (farmTotal * farmEfficiency) - (civilianTotal * 3) + (farmers * farmerEfficiency);
     foodTotal = foodTotal + foodPerTick;
     if (foodTotal < 0){
         if (civilianTotal > 0) {
