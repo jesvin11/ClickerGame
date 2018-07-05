@@ -25,4 +25,7 @@ function refresh(){
     document.getElementById('stone').innerHTML = stoneTotal + "/" + stoneMax;
     document.getElementById('stonePerTick').innerHTML = stonePerTick;
     document.getElementById('quarries').innerHTML = quarryTotal;
+    document.getElementById('woodenHouses').innerHTML = woodenHouseTotal;
+    document.getElementById('day').innerHTML = dayOfSeason;
+    document.getElementById('season').innerHTML = seasonName;
 }

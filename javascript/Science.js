@@ -27,3 +27,11 @@ function researchWoodenHousing(){
         hide("woodenHousingTech")
     }
 }
+
+function researchCalenders(){
+    if (scienceTotal >= 1000) {
+        scienceTotal = scienceTotal - 1000;
+        unhide("calenderHidden");
+        hide("calendersTech")
+    }
+}
