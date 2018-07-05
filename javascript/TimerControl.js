@@ -1,6 +1,7 @@
 firstLaunch = true;
 function Timer(){
     addFood();
+    addWood();
     addScience();
     timeAdvance();
     addCivilian();

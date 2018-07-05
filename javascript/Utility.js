@@ -15,4 +15,7 @@ function refresh(){
     document.getElementById('sciencePerTick').innerHTML = sciencePerTick;
     document.getElementById('library').innerHTML = libraryTotal;
     document.getElementById('scientists').innerHTML = scientists;
+    document.getElementById('wood').innerHTML = woodTotal;
+    document.getElementById('woodPerTick').innerHTML = woodPerTick;
+    document.getElementById('woodcutters').innerHTML = woodcutters;
 }

@@ -12,6 +12,7 @@
     <script language="JavaScript" src="javascript/Utility.js"></script>
     <script language="JavaScript" src="javascript/Building.js"></script>
     <script language="JavaScript" src="javascript/Science.js"></script>
+    <script language="JavaScript" src="javascript/Wood.js"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 <body onload="Timer()">
@@ -40,9 +41,18 @@
                 <div id="civilians"></div>
             </td>
             <td>
-
             </td>
         </tr>
+        <tr class="hidden" id="woodResource">
+            <td >Wood</td>
+            <td>
+                <div id="wood"></div>
+            </td>
+            <td>
+                <div id="woodPerTick"></div>
+            </td>
+        </tr>
+
         <tr class="hidden" id="scienceResource">
             <td >Science</td>
             <td>
@@ -73,7 +83,7 @@
                 </button>
             </td>
             <td>
-                10 food
+                10 Food
             </td>
         </tr>
         <tr>
@@ -87,10 +97,10 @@
                 </button>
             </td>
             <td>
-                50 food
+                50 Food
             </td>
         </tr>
-        <tr>
+        <tr class="hidden" id="libraryHidden">
             <td>Library</td>
             <td>
                 <div id="library"></div>
@@ -101,7 +111,7 @@
                 </button>
             </td>
             <td>
-                100 food
+                75 Wood
             </td>
         </tr>
     </table>
@@ -135,6 +145,22 @@
             </td>
             <td>
                 <button onclick="addFarmer()">
+                    +
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>Woodcutter</td>
+            <td>
+                <button onclick="removeWoodcutter()">
+                    -
+                </button>
+            </td>
+            <td>
+                <div id="woodcutters"></div>
+            </td>
+            <td>
+                <button onclick="addWoodcutter()">
                     +
                 </button>
             </td>
