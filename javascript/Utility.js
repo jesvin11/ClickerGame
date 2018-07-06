@@ -1,9 +1,34 @@
+unhidden = "";
+
+
 function unhide(id) {
+    document.getElementById(id).classList.remove('hidden');
+    if (unhidden === ""){
+        unhidden = id;
+    } else {
+        unhidden = unhidden + "," + id;
+    }
+}
+
+function reunhide(id) {
     document.getElementById(id).classList.remove('hidden');
 }
 
 function hide(id) {
-    document.getElementById(id).classList.add('hidden');
+    rebuild = "";
+    firstLoop = true;
+    search = unhidden.split(",");
+    search.forEach(function(element){
+        if (element !== id){
+            if (firstLoop){
+                rebuild = element;
+                firstLoop = false;
+            } else {
+                rebuild = rebuild + "," + element;
+            }
+        }
+    });
+    unhidden = rebuild;
 }
 
 function refresh(){

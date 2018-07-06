@@ -14,6 +14,7 @@
     <script language="JavaScript" src="javascript/Science.js"></script>
     <script language="JavaScript" src="javascript/Wood.js"></script>
     <script language="JavaScript" src="javascript/Stone.js"></script>
+    <script language="JavaScript" src="javascript/CookieFunctions.js"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 <body onload="Timer()">
@@ -225,7 +226,7 @@
         </tr>
     </table>
     <table class="hidden" id="scienceTable">
-        <tr id="stoneWorkingTech">
+        <tr id="stoneWorkingTech" class="hidden">
             <td>
                 Stone Working
             </td>
@@ -238,7 +239,7 @@
                 500 Science
             </td>
         </tr>
-        <tr id="woodenHousingTech">
+        <tr id="woodenHousingTech" class="hidden">
             <td>
                 Wooden Housing
             </td>
@@ -251,7 +252,7 @@
                 750 Science
             </td>
         </tr>
-        <tr id="calendersTech">
+        <tr id="calendersTech" class="hidden">
             <td>
                 Calenders
             </td>
@@ -265,6 +266,7 @@
             </td>
         </tr>
     </table>
-    <textarea></textarea>
+    <button class="inline" onclick="save()">Save</button>
+    <button class="inline" onclick="load()">Load</button>
 </body>
 </html>

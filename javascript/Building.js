@@ -32,7 +32,10 @@ function buildLibrary(){
         if (libraryTotal === 1){
             unhide("scienceResource");
             unhide("scienceJob");
-            unhide("scienceTable")
+            unhide("scienceTable");
+            unhide("stoneWorkingTech");
+            unhide("calendersTech");
+            unhide("woodenHousingTech");
         }
         refresh();
     }
