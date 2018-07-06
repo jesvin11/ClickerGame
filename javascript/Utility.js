@@ -15,7 +15,6 @@ function reunhide(id) {
 }
 
 function hide(id) {
-    document.getElementById(id).classList.add('hidden');
     rebuild = "";
     firstLoop = true;
     search = unhidden.split(",");
@@ -29,6 +28,7 @@ function hide(id) {
             }
         }
     });
+    document.getElementById(id).classList.add('hidden');
     unhidden = rebuild;
 }
 
