@@ -112,9 +112,9 @@ function load(){
     seasonName = readCookie("seasonName");
     unhidden = readCookie("unhidden");
 
-    unhide = unhidden.split(",");
+    Elements = unhidden.split(",");
     if (unhidden !== "") {
-        unhide.forEach(function (element) {
+        Elements.forEach(function (element) {
             reunhide(element);
         });
     }
