@@ -6,10 +6,10 @@ woodenHouseTotal = 0;
 farmCost = 10;
 
 function buildFarm(){
-    if (foodTotal >= 10){
-        foodTotal = foodTotal - 10;
+    if (foodTotal >= farmCost){
+        foodTotal = foodTotal - farmCost;
         farmTotal++;
-        farmCost = 10 + 0.01 * Math.pow(farmTotal, 2);
+        farmCost = Math.round(10 + 0.01 * Math.pow(farmTotal, 2));
         refresh();
     }
 }
