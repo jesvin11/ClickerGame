@@ -54,4 +54,6 @@ function refresh(){
     document.getElementById('woodenHouses').innerHTML = woodenHouseTotal;
     document.getElementById('day').innerHTML = dayOfSeason;
     document.getElementById('season').innerHTML = seasonName;
+    document.getElementById('farmCost').innerHTML = farmCost;
+
 }
