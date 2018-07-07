@@ -77,6 +77,11 @@ function save(){
     makeCookie("dayOfSeason", dayOfSeason, 9999);
     makeCookie("season", season, 9999);
     makeCookie("seasonName", seasonName, 9999);
+    makeCookie("farmCost", farmCost, 9999);
+    makeCookie("strawHutCost", strawHutCost, 9999);
+    makeCookie("libraryCost", libraryCost, 9999);
+    makeCookie("quarryCost", quarryCost, 9999);
+    makeCookie("woodenHouseCost", woodenHouseCost, 9999);
     makeCookie("unhidden", unhidden, 9999);
 }
 
@@ -109,6 +114,11 @@ function load(){
     hour = parseFloat(readCookie("hour"));
     dayOfSeason = parseFloat(readCookie("dayOfSeason"));
     season = parseFloat(readCookie("season"));
+    farmCost = parseFloat(readCookie("farmCost"));
+    strawHutCost = parseFloat(readCookie("strawHutCost"));
+    libraryCost = parseFloat(readCookie("libraryCost"));
+    quarryCost = parseFloat(readCookie("quarryCost"));
+    woodenHouseCost = parseFloat(readCookie("woodenHouseCost"));
     seasonName = readCookie("seasonName");
     unhidden = readCookie("unhidden");
 

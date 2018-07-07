@@ -55,5 +55,10 @@ function refresh(){
     document.getElementById('day').innerHTML = dayOfSeason;
     document.getElementById('season').innerHTML = seasonName;
     document.getElementById('farmCost').innerHTML = farmCost;
+    document.getElementById('strawHutCost').innerHTML = strawHutCost;
+    document.getElementById('libraryCost').innerHTML = libraryCost;
+    document.getElementById('quarryCost').innerHTML = quarryCost;
+    document.getElementById('woodenHouseCost').innerHTML = woodenHouseCost;
+
 
 }
