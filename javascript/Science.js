@@ -32,6 +32,15 @@ function researchCalenders(){
     if (scienceTotal >= 1000) {
         scienceTotal = scienceTotal - 1000;
         unhide("calenderHidden");
-        hide("calendersTech")
+        hide("calendersTech");
+        unhide("foodStorageTech")
+    }
+}
+
+function researchFoodStorage(){
+    if (scienceTotal >= 1500) {
+        scienceTotal = scienceTotal - 1500;
+        unhide("barnHidden");
+        hide("foodStorageTech")
     }
 }

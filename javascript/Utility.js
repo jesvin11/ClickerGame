@@ -59,6 +59,8 @@ function refresh(){
     document.getElementById('libraryCost').innerHTML = libraryCost;
     document.getElementById('quarryCost').innerHTML = quarryCost;
     document.getElementById('woodenHouseCost').innerHTML = woodenHouseCost;
+    document.getElementById('barnCost').innerHTML = barnCost;
+    document.getElementById('barnTotal').innerHTML = barnTotal;
 
 
 }

@@ -8,12 +8,23 @@ strawHutCost = 50;
 libraryCost = 75;
 quarryCost = 100;
 woodenHouseCost = 60;
+barnCost = 100;
+barnTotal = 0;
 
 function buildFarm(){
     if (foodTotal >= farmCost){
         foodTotal = foodTotal - farmCost;
         farmTotal++;
         farmCost = Math.round(10 + 0.01 * Math.pow(farmTotal, 2));
+        refresh();
+    }
+}
+function buildBarn(){
+    if (woodTotal >= barnCost){
+        woodTotal = woodTotal - barnCost;
+        barnTotal++;
+        foodMax = foodMax + 100;
+        barnCost = Math.round(100 + 0.01 * Math.pow(barnTotal, 2));
         refresh();
     }
 }
@@ -26,7 +37,7 @@ function buildStrawHut(){
         if (strawHutTotal === 1){
             unhide("civilianResource");
         }
-        strawHutCost = Math.round(10 + 0.01 * Math.pow(strawHutTotal, 2));
+        strawHutCost = Math.round(50 + 0.01 * Math.pow(strawHutTotal, 2));
         refresh();
     }
 }
@@ -44,7 +55,7 @@ function buildLibrary(){
             unhide("calendersTech");
             unhide("woodenHousingTech");
         }
-        libraryCost = Math.round(10 + 0.01 * Math.pow(libraryTotal, 2));
+        libraryCost = Math.round(75 + 0.01 * Math.pow(libraryTotal, 2));
         refresh();
     }
 }
@@ -53,7 +64,7 @@ function buildQuarry(){
     if (woodTotal >= quarryCost){
         woodTotal = woodTotal - quarryCost;
         quarryTotal++;
-        quarryCost = Math.round(10 + 0.01 * Math.pow(quarryTotal, 2));
+        quarryCost = Math.round(100 + 0.01 * Math.pow(quarryTotal, 2));
     }
 }
 
@@ -62,7 +73,7 @@ function buildWoodenHouse(){
         woodTotal = woodTotal - woodenHouseCost;
         woodenHouseTotal++;
         maxCivilians = maxCivilians + 3;
-        woodenHouseCost = Math.round(10 + 0.01 * Math.pow(woodenHouseTotal, 2));
+        woodenHouseCost = Math.round(60 + 0.01 * Math.pow(woodenHouseTotal, 2));
         refresh();
     }
 }

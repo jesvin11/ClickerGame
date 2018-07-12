@@ -101,6 +101,20 @@
                 <div id="farmCost" class="inline"></div><div class="inline"> Food</div>
             </td>
         </tr>
+        <tr id="barnHidden" class="hidden">
+            <td>Barn</td>
+            <td>
+                <div id="barnTotal"></div>
+            </td>
+            <td>
+                <button onclick="buildBarn()">
+                    Build
+                </button>
+            </td>
+            <td>
+                <div id="barnCost" class="inline"></div><div class="inline"> Wood</div>
+            </td>
+        </tr>
         <tr>
             <td>Straw Huts</td>
             <td>
@@ -263,6 +277,19 @@
             </td>
             <td>
                 1000 Science
+            </td>
+        </tr>
+        <tr id="foodStorageTech" class="hidden">
+            <td>
+                Food Storage
+            </td>
+            <td>
+                <button onclick="researchFoodStorage()">
+                    Research
+                </button>
+            </td>
+            <td>
+                1500 Science
             </td>
         </tr>
     </table>
