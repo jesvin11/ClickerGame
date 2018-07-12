@@ -88,112 +88,112 @@ function save(){
 }
 
 function load(){
-    if (readCookie("foodTotal") === ""){
+    if (readCookie("foodTotal") !== ""){
         foodTotal = parseFloat(readCookie("foodTotal"));
     }
-    if (readCookie("farmEfficiency") === ""){
+    if (readCookie("farmEfficiency") !== ""){
         farmEfficiency = parseFloat(readCookie("farmEfficiency"));
     }
-    if (readCookie("farmerEfficiency") === ""){
+    if (readCookie("farmerEfficiency") !== ""){
         farmerEfficiency = parseFloat(readCookie("farmerEfficiency"));
     }
-    if (readCookie("foodMax") === ""){
+    if (readCookie("foodMax") !== ""){
         foodMax = parseFloat(readCookie("foodMax"));
     }
-    if (readCookie("weatherModifier") === ""){
+    if (readCookie("weatherModifier") !== ""){
         weatherModifier = parseFloat(readCookie("weatherModifier"));
     }
-    if (readCookie("farmTotal") === ""){
+    if (readCookie("farmTotal") !== ""){
         farmTotal = parseFloat(readCookie("farmTotal"));
     }
-    if (readCookie("strawHutTotal") === ""){
+    if (readCookie("strawHutTotal") !== ""){
         strawHutTotal = parseFloat(readCookie("strawHutTotal"));
     }
-    if (readCookie("libraryTotal") === ""){
+    if (readCookie("libraryTotal") !== ""){
         libraryTotal = parseFloat(readCookie("libraryTotal"));
     }
-    if (readCookie("quarryTotal") === ""){
+    if (readCookie("quarryTotal") !== ""){
         quarryTotal = parseFloat(readCookie("quarryTotal"));
     }
-    if (readCookie("woodenHouseTotal") === ""){
+    if (readCookie("woodenHouseTotal") !== ""){
         woodenHouseTotal = parseFloat(readCookie("woodenHouseTotal"));
     }
-    if (readCookie("unemployed") === ""){
+    if (readCookie("unemployed") !== ""){
         unemployed = parseFloat(readCookie("unemployed"));
     }
-    if (readCookie("farmers") === ""){
+    if (readCookie("farmers") !== ""){
         farmers = parseFloat(readCookie("farmers"));
     }
-    if (readCookie("woodcutters") === ""){
+    if (readCookie("woodcutters") !== ""){
         woodcutters = parseFloat(readCookie("woodcutters"));
     }
-    if (readCookie("scientists") === ""){
+    if (readCookie("scientists") !== ""){
         scientists = parseFloat(readCookie("scientists"));
     }
-    if (readCookie("woodTotal") === ""){
+    if (readCookie("woodTotal") !== ""){
         woodTotal = parseFloat(readCookie("woodTotal"));
     }
-    if (readCookie("woodcutterEfficieny") === ""){
+    if (readCookie("woodcutterEfficieny") !== ""){
         woodcutterEfficieny = parseFloat(readCookie("woodcutterEfficieny"));
     }
-    if (readCookie("woodMax") === ""){
+    if (readCookie("woodMax") !== ""){
         woodMax = parseFloat(readCookie("woodMax"));
     }
-    if (readCookie("stoneTotal") === ""){
+    if (readCookie("stoneTotal") !== ""){
         stoneTotal = parseFloat(readCookie("stoneTotal"));
     }
-    if (readCookie("quarryEfficiency") === ""){
+    if (readCookie("quarryEfficiency") !== ""){
         quarryEfficiency = parseFloat(readCookie("quarryEfficiency"));
     }
-    if (readCookie("stoneMax") === ""){
+    if (readCookie("stoneMax") !== ""){
         stoneMax = parseFloat(readCookie("stoneMax"));
     }
-    if (readCookie("civilianTotal") === ""){
+    if (readCookie("civilianTotal") !== ""){
         civilianTotal = parseFloat(readCookie("civilianTotal"));
     }
-    if (readCookie("maxCivilians") === ""){
+    if (readCookie("maxCivilians") !== ""){
         maxCivilians = parseFloat(readCookie("maxCivilians"));
     }
-    if (readCookie("scienceTotal") === ""){
+    if (readCookie("scienceTotal") !== ""){
         scienceTotal = parseFloat(readCookie("scienceTotal"));
     }
-    if (readCookie("scienceMax") === ""){
+    if (readCookie("scienceMax") !== ""){
         scienceMax = parseFloat(readCookie("scienceMax"));
     }
-    if (readCookie("scientistEfficiency") === ""){
+    if (readCookie("scientistEfficiency") !== ""){
         scientistEfficiency = parseFloat(readCookie("scientistEfficiency"));
     }
-    if (readCookie("hour") === ""){
+    if (readCookie("hour") !== ""){
         hour = parseFloat(readCookie("hour"));
     }
-    if (readCookie("dayOfSeason") === ""){
+    if (readCookie("dayOfSeason") !== ""){
         dayOfSeason = parseFloat(readCookie("dayOfSeason"));
     }
-    if (readCookie("season") === ""){
+    if (readCookie("season") !== ""){
         season = parseFloat(readCookie("season"));
     }
-    if (readCookie("farmCost") === ""){
+    if (readCookie("farmCost") !== ""){
         farmCost = parseFloat(readCookie("farmCost"));
     }
-    if (readCookie("strawHutCost") === ""){
+    if (readCookie("strawHutCost") !== ""){
         strawHutCost = parseFloat(readCookie("strawHutCost"));
     }
-    if (readCookie("libraryCost") === ""){
+    if (readCookie("libraryCost") !== ""){
         libraryCost = parseFloat(readCookie("libraryCost"));
     }
-    if (readCookie("quarryCost") === ""){
+    if (readCookie("quarryCost") !== ""){
         quarryCost = parseFloat(readCookie("quarryCost"));
     }
-    if (readCookie("woodenHouseCost") === ""){
+    if (readCookie("woodenHouseCost") !== ""){
         woodenHouseCost = parseFloat(readCookie("woodenHouseCost"));
     }
-    if (readCookie("seasonName") === ""){
+    if (readCookie("seasonName") !== ""){
         readCookie("seasonName");
     }
-    if (readCookie("barnTotal") === ""){
+    if (readCookie("barnTotal") !== ""){
         barnTotal = parseFloat(readCookie("barnTotal"));
     }
-    if (readCookie("barnCost") === ""){
+    if (readCookie("barnCost") !== ""){
         barnCost = parseFloat(readCookie("barnCost"));
     }
     unhidden = readCookie("unhidden");
