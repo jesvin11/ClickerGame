@@ -16,7 +16,8 @@ function researchStoneWorking(){
         scienceTotal = scienceTotal - 500;
         unhide("stoneResource");
         unhide("quarryBuilding");
-        hide("stoneWorkingTech")
+        hide("stoneWorkingTech");
+        unhide("wondersTech");
     }
 }
 
@@ -24,7 +25,7 @@ function researchWoodenHousing(){
     if (scienceTotal >= 750) {
         scienceTotal = scienceTotal - 750;
         unhide("WoodenHouseHidden");
-        hide("woodenHousingTech")
+        hide("woodenHousingTech");
     }
 }
 
@@ -33,7 +34,7 @@ function researchCalenders(){
         scienceTotal = scienceTotal - 1000;
         unhide("calenderHidden");
         hide("calendersTech");
-        unhide("foodStorageTech")
+        unhide("foodStorageTech");
     }
 }
 
@@ -41,6 +42,17 @@ function researchFoodStorage(){
     if (scienceTotal >= 1500) {
         scienceTotal = scienceTotal - 1500;
         unhide("barnHidden");
-        hide("foodStorageTech")
+        hide("foodStorageTech");
+    }
+}
+
+function researchWonders(){
+    if (scienceTotal >= 2500) {
+        scienceTotal = scienceTotal - 2500;
+        unhide("wondersHidden");
+        unhide("pyramids");
+        unhide("startPyramids");
+        unhide("pyramidsCost");
+        hide("wondersTech");
     }
 }

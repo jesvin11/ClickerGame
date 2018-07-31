@@ -239,6 +239,27 @@
             </td>
         </tr>
     </table>
+
+    <table id="wondersHidden" class="hidden">
+        <tr id="pyramids">
+            <td>
+                Pyramids
+            </td>
+            <td id="startPyramids" class="hidden">
+                <button onclick="startPyramids()">Start Building</button>
+            </td>
+            <td id="stopPyramids" class="hidden">
+                <button onclick="stopPyramids()">Stop Building</button>
+            </td>
+            <td>
+                <div id="pyramidsPercent"></div>
+            </td>
+            <td id="pyramidsCost" class="hidden">
+                10 Stone per Tick
+            </td>
+        </tr>
+    </table>
+
     <table class="hidden" id="scienceTable">
         <tr id="stoneWorkingTech" class="hidden">
             <td>
@@ -290,6 +311,19 @@
             </td>
             <td>
                 1500 Science
+            </td>
+        </tr>
+        <tr id="wondersTech" class="hidden">
+            <td>
+                Wonders
+            </td>
+            <td>
+                <button onclick="researchWonders()">
+                    Research
+                </button>
+            </td>
+            <td>
+                2500 Science
             </td>
         </tr>
     </table>
