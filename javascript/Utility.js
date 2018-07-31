@@ -61,7 +61,7 @@ function refresh(){
     document.getElementById('woodenHouseCost').innerHTML = woodenHouseCost;
     document.getElementById('barnCost').innerHTML = barnCost;
     document.getElementById('barnTotal').innerHTML = barnTotal;
-    document.getElementById('barnTotal').innerHTML = pyramidsPercent + "%";
+    document.getElementById('pyramidsPercent').innerHTML = pyramidsPercent + "%";
 
 
 }

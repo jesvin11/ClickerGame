@@ -2,36 +2,34 @@ pyramidsBuilding = false;
 pyramidsDone = false;
 pyramidsStoneDone = 0;
 pyramidsPercent = 0;
+wondersStoneCost = 0;
 
 function startPyramids(){
     pyramidsBuilding = true;
-    unhide("stopPyrramids");
-    hide("startPyramids")
+    unhide("stopPyramids");
+    hide("startPyramids");
+    wondersStoneCost = wondersStoneCost + 10;
 }
 
 function stopPyramids(){
     pyramidsBuilding = false;
-    unhide("startPyrramids");
-    hide("stopPyramids")
+    unhide("startPyramids");
+    hide("stopPyramids");
+    wondersStoneCost = wondersStoneCost - 10;
 }
 
 function buildWonders(){
     if (pyramidsBuilding === true){
-        if (stoneTotal >= 10){
-            pyramidsStoneDone = pyramidsStoneDone + 10;
-            stoneTotal = stoneTotal - 10;
-        } else {
-            pyramidsStoneDone = pyramidsStoneDone + stoneTotal;
-            stoneTotal = 0;
-        }
-        pyramidsPercent = Math.round(pyramidsStoneDone / 50000 * 100);
-        if (pyramidsStoneDone > 50000){
+        if (pyramidsStoneDone > 50000 && pyramidsDone !== true){
             pyramidsDone = true;
+            pyramidsStoneDone = 50000;
+            pyramidsBuilding = false;
             hide("pyramidsCost");
-            hide("startPyramids");
+            hide("stopPyramids");
             woodMax = woodMax + 2000;
             foodMax = foodMax + 5000;
             stoneMax = stoneMax + 1500;
         }
     }
+    pyramidsPercent = Math.round(pyramidsStoneDone / 50000 * 100);
 }

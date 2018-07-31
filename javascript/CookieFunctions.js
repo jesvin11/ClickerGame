@@ -84,6 +84,9 @@ function save(){
     makeCookie("woodenHouseCost", woodenHouseCost, 9999);
     makeCookie("barnCost", barnCost, 9999);
     makeCookie("barnTotal", barnTotal, 9999);
+    makeCookie("pyramidsBuilding", pyramidsBuilding, 9999);
+    makeCookie("pyramidsDone", pyramidsDone, 9999);
+    makeCookie("pyramidsStoneDone", pyramidsStoneDone, 9999);
     makeCookie("unhidden", unhidden, 9999);
 }
 
@@ -195,6 +198,15 @@ function load(){
     }
     if (readCookie("barnCost") !== ""){
         barnCost = parseFloat(readCookie("barnCost"));
+    }
+    if (readCookie("pyramidsBuilding") !== ""){
+        pyramidsBuilding = parseFloat(readCookie("pyramidsBuilding"));
+    }
+    if (readCookie("pyramidsDone") !== ""){
+        pyramidsDone = parseFloat(readCookie("pyramidsDone"));
+    }
+    if (readCookie("pyramidsStoneDone") !== ""){
+        pyramidsStoneDone = parseFloat(readCookie("pyramidsStoneDone"));
     }
     unhidden = readCookie("unhidden");
 
